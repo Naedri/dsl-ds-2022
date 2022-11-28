@@ -1,0 +1,9 @@
+grammar fr.imt.dsl.ds.jallais.exo2.Exo2 with org.eclipse.xtext.common.Terminals
+
+generate exo2 "http://www.imt.fr/dsl/ds/jallais/exo2/Exo2"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
