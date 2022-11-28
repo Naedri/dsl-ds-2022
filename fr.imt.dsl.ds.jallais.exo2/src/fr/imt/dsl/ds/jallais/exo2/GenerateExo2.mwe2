@@ -32,6 +32,10 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "fr.imt.dsl.ds.jallais.exo2.Exo2"
+			// dans la nouvelle instance d'eclipse, 
+			// le xcheck va évaluer la validité les fichiers s'ils valident les deux conditions suivantes :
+			// 1. que leur extension soit de la valeur de `fileExtensions`
+			// 2. qu'ils y soient crées
 			fileExtensions = "mydsl"
 
 			serializer = {
