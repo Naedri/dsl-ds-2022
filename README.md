@@ -21,3 +21,6 @@ Adrien Jallais
 
 ![class diagram](https://github.com/Naedri/dsl-ds-2022/blob/main/fr.imt.dsl.ds.jallais.exo3/class-diagram-exo3.png)
 
+#### Exercice 4
+
+![image-20221128173722431](./README.assets/image-20221128173722431.png)
