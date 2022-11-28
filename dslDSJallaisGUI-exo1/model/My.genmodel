@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dslDSJallaisGUI-exo1/src" modelPluginID="dslDSJallaisGUI-exo1"
+    modelName="My" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>My.ecore</foreignModel>
+  <genPackages prefix="GUIWindows" disposableProviderFactory="true" ecorePackage="My.ecore#/">
+    <genClasses ecoreClass="My.ecore#//GUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//GUI/frames"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Frame">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Frame/title"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Frame/size"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Frame/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Frame/children"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//SizeSquare">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//SizeSquare/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//SizeSquare/lenght"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Section">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Section/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//RefName"/>
+    <genClasses image="false" ecoreClass="My.ecore#//GuiComponent"/>
+    <genClasses ecoreClass="My.ecore#//Label">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Label/text"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Button/text"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Button/redirectTo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
