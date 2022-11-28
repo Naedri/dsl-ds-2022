@@ -10,9 +10,11 @@ public class Frame extends Container {
     public Frame() {
         super();
     }
+
     public Frame(ArrayList<Section> sections) {
         super(sections);
     }
+
     public String toString() {
         String result = "calendar {\n";
         for (Section e : super.getSections())
@@ -21,16 +23,16 @@ public class Frame extends Container {
         return result;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getTitle() {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public void setSize(int w, int l) {
-        this.width=w;
-        this.length=l;
+        this.width = w;
+        this.length = l;
     }
 }

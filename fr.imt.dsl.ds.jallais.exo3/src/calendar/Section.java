@@ -5,7 +5,7 @@ public class Section extends Container implements GuiComponent {
     private String name;
 
     public Section() {
-        this(null );
+        this(null);
     }
 
     public Section(String name) {

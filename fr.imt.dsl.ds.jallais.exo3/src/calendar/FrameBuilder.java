@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FrameBuilder {
-    private List<SectionBuilder> sections = new ArrayList<SectionBuilder>();
+    private final List<SectionBuilder> sections = new ArrayList<SectionBuilder>();
 
     public SectionBuilder section(String name) {
         SectionBuilder child = new SectionBuilder(this);

@@ -11,8 +11,9 @@ public abstract class Container {
     }
 
     public Container() {
-        this.children =new ArrayList<GuiComponent>();
+        this.children = new ArrayList<GuiComponent>();
     }
+
     public ArrayList<GuiComponent> getChildren() {
         return children;
     }
