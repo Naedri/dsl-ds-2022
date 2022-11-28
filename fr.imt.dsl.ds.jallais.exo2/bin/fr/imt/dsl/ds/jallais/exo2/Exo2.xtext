@@ -2,8 +2,26 @@ grammar fr.imt.dsl.ds.jallais.exo2.Exo2 with org.eclipse.xtext.common.Terminals
 
 generate exo2 "http://www.imt.fr/dsl/ds/jallais/exo2/Exo2"
 
-Model:
-	greetings+=Greeting*;
+GUI:
+	(frames+=Frame)*;
 	
-Greeting:
-	'Hello' name=ID '!';
+Frame:
+	'frame' name=ID '{'
+		'title:' title=STRING
+		'size:' width=INT 'x' lenght=INT
+		(sections+=Section)*
+	'}';
+	
+Section:
+	'section' name=ID '{'
+		(elements+=GuiComponent)*
+	'}';
+
+GuiComponent:
+	Section | Label | Button;
+	
+Label:
+	'label:' text=STRING;
+	
+Button:
+	'button:' text=STRING ('->' redirectTo=[Frame])?;
