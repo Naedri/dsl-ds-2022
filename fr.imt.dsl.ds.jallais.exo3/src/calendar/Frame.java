@@ -8,19 +8,11 @@ public class Frame extends Container {
     private int width;
 
     public Frame() {
-        super();
+        super("frame");
     }
 
     public Frame(ArrayList<Section> sections) {
-        super(sections);
-    }
-
-    public String toString() {
-        String result = "calendar {\n";
-        for (Section e : super.getSections())
-            result += e.toString() + "\n";
-        result += "}";
-        return result;
+        super("frame", Section.parseToGuiComponent(sections));
     }
 
     public String getTitle() {
@@ -35,4 +27,5 @@ public class Frame extends Container {
         this.width = w;
         this.length = l;
     }
+
 }

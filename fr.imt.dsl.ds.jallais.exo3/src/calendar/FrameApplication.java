@@ -34,6 +34,8 @@ public class FrameApplication {
                 header.addChild(label0);
                 body.addChild(button1);
 
+                System.out.println(frame.toString());
+
                 //Frame frame = frameBuilder.getContent();
                 //return frame;
             }
