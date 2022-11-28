@@ -13,4 +13,11 @@ Adrien Jallais
 
 ### Illustrations
 
+#### Exercice 1
+
 ![class diagram](https://github.com/Naedri/dsl-ds-2022/blob/main/dslDSJallaisGUI-exo1/model/GUIWindows%20class%20diagram.png)
+
+#### Exercice 3
+
+![class diagram](https://github.com/Naedri/dsl-ds-2022/blob/main/dslDSJallaisGUI-exo1/model/GUIWindows%20class%20diagram.png)
+
