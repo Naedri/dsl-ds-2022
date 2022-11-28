@@ -23,4 +23,4 @@ Adrien Jallais
 
 #### Exercice 4
 
-![image-20221128173722431](./README.assets/image-20221128173722431.png)
+![schema](https://github.com/Naedri/dsl-ds-2022/blob/main/exo4/schema.png)
