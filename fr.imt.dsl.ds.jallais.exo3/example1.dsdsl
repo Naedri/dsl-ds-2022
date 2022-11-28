@@ -1,0 +1,12 @@
+frame A { 
+  title: "Frame A" 
+  size: 200 x 100 
+  section content {
+    section header {
+    		label: "Hello"
+    }
+    section body {
+       button: "World!"
+    }
+  }
+}
