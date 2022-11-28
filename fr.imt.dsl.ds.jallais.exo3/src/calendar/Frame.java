@@ -2,30 +2,35 @@ package calendar;
 
 import java.util.ArrayList;
 
-public class Frame {
-	private ArrayList<Section> sections;
-	
-	public Frame() {
-		sections = new ArrayList<Section>();
-	}
-	
-	public ArrayList<Section> getEvents() {
-		return sections;
-	}
+public class Frame extends Container {
+    private String title;
+    private int length;
+    private int width;
 
-	public void setEvents(ArrayList<Section> sections) {
-		this.sections = sections;
-	}
+    public Frame() {
+        super();
+    }
+    public Frame(ArrayList<Section> sections) {
+        super(sections);
+    }
+    public String toString() {
+        String result = "calendar {\n";
+        for (Section e : super.getSections())
+            result += e.toString() + "\n";
+        result += "}";
+        return result;
+    }
 
-	public void addEvent(Section e){
-		sections.add(e);
-	}
-	
-	public String toString(){
-		String result = "calendar {\n";
-		for (Section e:sections) 
-			result += e.toString()+"\n";
-		result += "}";
-		return result;
-	}
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setSize(int w, int l) {
+        this.width=w;
+        this.length=l;
+    }
 }
