@@ -15,15 +15,16 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Frame/ref"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Frame/children"/>
     </genClasses>
+    <genClasses ecoreClass="My.ecore#//RefName"/>
     <genClasses ecoreClass="My.ecore#//SizeSquare">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//SizeSquare/width"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//SizeSquare/lenght"/>
     </genClasses>
+    <genClasses image="false" ecoreClass="My.ecore#//GuiComponent"/>
     <genClasses ecoreClass="My.ecore#//Section">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Section/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Section/children"/>
     </genClasses>
-    <genClasses ecoreClass="My.ecore#//RefName"/>
-    <genClasses image="false" ecoreClass="My.ecore#//GuiComponent"/>
     <genClasses ecoreClass="My.ecore#//Label">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Label/text"/>
     </genClasses>

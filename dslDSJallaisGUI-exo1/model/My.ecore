@@ -12,16 +12,18 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
         eType="#//GuiComponent" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RefName"/>
   <eClassifiers xsi:type="ecore:EClass" name="SizeSquare">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="lenght" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GuiComponent" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Section" eSuperTypes="#//GuiComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" lowerBound="1" eType="#//RefName"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//GuiComponent" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RefName"/>
-  <eClassifiers xsi:type="ecore:EClass" name="GuiComponent" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//GuiComponent">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
